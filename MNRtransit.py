@@ -1,7 +1,7 @@
 #CSci 127 Teaching Staff
 #October 2018
 #A template for a program that computes Copenhagen transit fares.
-#Modified by:  ADD YOUR NAME HERE
+#Modified by:  jason
 
 def computeFare(zone, ticketType):
      """
