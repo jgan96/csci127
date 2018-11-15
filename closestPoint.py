@@ -14,11 +14,8 @@ def getData():
      Returns a dataframe of the contents.
      """
      
-     df = None #<-- placeholder, can remove once defined.
-
-     ###################################
-     ### FILL IN YOUR CODE HERE      ###
-     ###################################
+     s = input("csv file: ")
+     df = pd.read_csv(s)
 
      return(df)
 
@@ -29,11 +26,10 @@ def getColumnNames():
      Returns those values as a tuple.
      """
 
-     latName, lonName = "", "" #<-- placeholder, can remove once defined.
+     #latName, lonName = "", "" #<-- placeholder, can remove once defined.
 
-     ###################################
-     ### FILL IN YOUR CODE HERE      ###
-     ###################################
+     latName = input("latitude col: ")
+     lonName = input("longitude col: ")
     
      return(latName,lonName)
  
@@ -45,11 +41,10 @@ def getLocale():
 
      """
 
-     lat, lon = 0.0,0.0      #<-- placeholder, can remove once defined.
+     #lat, lon = 0.0,0.0      #<-- placeholder, can remove once defined.
 
-     ###################################
-     ### FILL IN YOUR CODE HERE      ###
-     ###################################   
+     lat = input("current latitude: ")
+     long = input("current longitude: ")
 
      return(lat, lon)
 
@@ -59,10 +54,11 @@ def computeDist(x1,y1,x2,y2):
      Returns (x1-x2)^2 + (y1-y2)^2
      """
      d = 0.0   #<-- placeholder, can remove once defined.
-
-     ###################################
-     ### FILL IN YOUR CODE HERE      ###
-     ###################################
+     
+     distX = x1 - x2
+     distY = y1 - y2
+     
+     d = distX * distX + distY + distY
 
      return(d)
 
