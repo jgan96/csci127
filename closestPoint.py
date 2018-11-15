@@ -43,10 +43,10 @@ def getLocale():
 
      #lat, lon = 0.0,0.0      #<-- placeholder, can remove once defined.
 
-     lat = input("current latitude: ")
-     lon = input("current longitude: ")
+     curLat = input("current latitude: ")
+     curLon = input("current longitude: ")
 
-     return(lat, lon)
+     return(curLat, curLon)
 
 def computeDist(x1,y1,x2,y2):
      """
